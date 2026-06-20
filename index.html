@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>سياسة الخصوصية - كوبون توت | Privacy Policy - Coupon Tot</title>
   <style>
-    :root {
-      color-scheme: light;
-    }
+    :root { color-scheme: light; }
     body {
       font-family: "Segoe UI", Tahoma, Arial, sans-serif;
       line-height: 1.8;
@@ -23,14 +21,8 @@
       padding: 28px 24px;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     }
-    h1, h2 {
-      color: #111;
-      line-height: 1.4;
-    }
-    h1 {
-      font-size: 1.6rem;
-      margin-bottom: 0.25rem;
-    }
+    h1, h2 { color: #111; line-height: 1.4; }
+    h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
     h2 {
       font-size: 1.15rem;
       margin-top: 1.75rem;
@@ -38,17 +30,9 @@
       border-bottom: 1px solid #eee;
       padding-bottom: 0.35rem;
     }
-    .meta {
-      color: #555;
-      font-size: 0.95rem;
-      margin-bottom: 1.5rem;
-    }
-    ul, ol {
-      padding-right: 1.25rem;
-    }
-    li {
-      margin-bottom: 0.35rem;
-    }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.5rem; }
+    ul, ol { padding-right: 1.25rem; }
+    li { margin-bottom: 0.35rem; }
     .info-box {
       background: #f0f4ff;
       border: 1px solid #d6e0ff;
@@ -56,13 +40,8 @@
       padding: 14px 16px;
       margin: 1rem 0;
     }
-    .info-box p {
-      margin: 0.35rem 0;
-    }
-    a {
-      color: #1a56db;
-      word-break: break-all;
-    }
+    .info-box p { margin: 0.35rem 0; }
+    a { color: #1a56db; word-break: break-all; }
     .en {
       direction: ltr;
       text-align: left;
@@ -83,7 +62,7 @@
       <p><strong>اسم المطوّر / الجهة المسؤولة:</strong> iHomdi</p>
       <p><strong>معرّف الحزمة (Package Name):</strong> com.iHomdi.coppon_tot</p>
       <p><strong>منصة النشر:</strong> Google Play</p>
-      <p><strong>البريد الإلكتروني للتواصل:</strong> <a href="mailto:ihomdi.support@gmail.com">ihomdi.support@gmail.com</a></p>
+      <p><strong>البريد الإلكتروني للتواصل:</strong> <a href="mailto:now150x@gmail.com">now150x@gmail.com</a></p>
     </div>
 
     <p>
@@ -95,77 +74,109 @@
     <h2>1. نظرة عامة</h2>
     <p>
       تطبيق <strong>كوبون توت</strong> هو تطبيق مجاني يعرض كوبونات وعروضًا وروابط تابعة
-      (Affiliate Links) لمتاجر خارجية. لا يتطلب التطبيق إنشاء حساب مستخدم للاستخدام الأساسي.
+      (Affiliate Links) لمتاجر خارجية. لا يتطلب التطبيق إنشاء حساب مستخدم أو تسجيل دخول
+      للاستخدام الأساسي. لا يعرض التطبيق إعلانات داخلية (In-App Ads).
     </p>
 
-    <h2>2. المعلومات التي نجمعها</h2>
+    <h2>2. الأذونات التي يطلبها التطبيق</h2>
+    <p>يطلب التطبيق على Android الإذن التالي فقط:</p>
+    <ul>
+      <li><strong>INTERNET (الإنترنت):</strong> لجلب الكوبونات والعروض من Firebase Firestore، وتحميل الصور، وفتح روابط المتاجر الخارجية.</li>
+    </ul>
+    <p><strong>لا يطلب</strong> التطبيق أذونات الوصول إلى:</p>
+    <ul>
+      <li>الموقع الجغرافي (Location)</li>
+      <li>الكamera أو الميكrophone</li>
+      <li>جهات الاتصال (Contacts)</li>
+      <li>الرسائل النصية أو الهاتف</li>
+      <li>التخزين الخارجي (External Storage)</li>
+      <li>الحسابات على الجهاز</li>
+    </ul>
+
+    <h2>3. المعلومات التي نجمعها ونخزّنها</h2>
     <p>قد يتعامل التطبيق مع الأنواع التالية من البيانات:</p>
     <ul>
-      <li><strong>بيانات محلية على الجهاز:</strong> مثل قائمة المفضلة (Coupons Favorites) التي تحفظها أنت على جهازك عبر التخزين المحلي (SharedPreferences / GetStorage).</li>
-      <li><strong>بيانات تقنية أساسية:</strong> قد تُجمع تلقائيًا عبر خدمات Google Firebase لضمان عمل التطبيق واستقراره (مثل معرّفات تقنية للجهاز/التطبيق ضمن Firebase).</li>
-      <li><strong>بيانات المحتوى:</strong> يجلب التطبيق بيانات الكوبونات والعروض والبانرات من Firebase Firestore لعرضها داخل التطبيق.</li>
+      <li><strong>قائمة المفضلة (محليًا):</strong> عند إضافتك كوبونات للمفضلة، تُحفظ بيانات الكوبون (مثل رقم الكوبون والوصف) على جهازك فقط عبر <strong>SharedPreferences</strong>. لا تُرفع هذه البيانات إلى خوادمنا.</li>
+      <li><strong>إعدادات المظهر (محليًا):</strong> اختيارك للوضع الفاتح أو الداكن يُحفظ على جهازك عبر <strong>GetStorage</strong>.</li>
+      <li><strong>محتوى التطبيق (من الخادم):</strong> يجلب التطبيق الكوبونات والفئات والبانرات والعروض من <strong>Firebase Firestore</strong> لعرضها داخل التطبيق.</li>
+      <li><strong>صور الشبكة:</strong> يحمّل التطبيق صور الكوبونات والبانرات من روابط URL موجودة في بيانات Firestore.</li>
+      <li><strong>بيانات Firebase التقنية:</strong> تستخدم Google Firebase Core وFirestore لتشغيل التطبيق. <strong>لا نستخدم Firebase Analytics</strong> لتتبّع سلوكك داخل التطبيق. قد تُجمع بيانات تقنية أساسية من Google (مثل معلومات الاتصال بالخدمة) وفق <a href="https://policies.google.com/privacy">سياسة خصوصية Google</a>.</li>
     </ul>
     <p>
       <strong>لا نجمع</strong> عمدًا معلومات شخصية حساسة مثل الاسم الكامل، رقم الهوية، عنوان المنزل،
-      أو بيانات الدفع من خلال التطبيق.
+      رقم الهاتف، أو بيانات الدفع من خلال التطبيق.
     </p>
 
-    <h2>3. كيفية استخدام المعلومات</h2>
+    <h2>4. الحافظة (Clipboard)</h2>
+    <p>
+      عند ضغطك على زر نسخ الكوبون، ينسخ التطبيق رمز الكوبون إلى حافظة جهازك (Clipboard)
+      لتسهيل لصقه في المتجر. <strong>لا يقرأ</strong> التطبيق محتوى حافظتك ولا يجمع بيانات منها.
+    </p>
+
+    <h2>5. كيفية استخدام المعلومات</h2>
     <ul>
-      <li>عرض الكوبونات والعروض والفئات داخل التطبيق.</li>
-      <li>حفظ تفضيلاتك المحلية مثل المفضلة وإعدادات المظهر (الوضع الفاتح/الداكن).</li>
-      <li>تحسين استقرار التطبيق وتجربة الاستخدام.</li>
+      <li>عرض الكوبونات والعروض والفئات والبانرات داخل التطبيق.</li>
+      <li>حفظ قائمة المفضلة وإعدادات المظهر على جهازك.</li>
+      <li>تمكين نسخ أكواد الكوبونات عند طلبك.</li>
       <li>فتح روابط خارجية للمتاجر عند ضغطك على الكوبونات أو الإعلانات.</li>
+      <li>ضمان عمل التطبيق واستقراره عبر Firebase.</li>
     </ul>
 
-    <h2>4. مشاركة البيانات مع أطراف ثالثة</h2>
-    <p>قد نشارك أو نُتيح البيانات للجهات التالية فقط بالقدر اللازم لتشغيل التطبيق:</p>
+    <h2>6. مشاركة البيانات مع أطراف ثالثة</h2>
+    <p>قد تتعامل البيانات مع الجهات التالية:</p>
     <ul>
-      <li><strong>Google Firebase / Firestore:</strong> لاستضافة وعرض محتوى الكوبونات والعروض.</li>
-      <li><strong>المتاجر والمواقع الخارجية:</strong> عند الضغط على روابط تابعة (Affiliate Links)، سيتم توجيهك إلى مواقع خارجية تخضع لسياسات خصوصية منفصلة.</li>
+      <li><strong>Google Firebase / Firestore:</strong> لاستضافة محتوى الكوبونات والعروض وتقديمه للتطبيق. راجع <a href="https://firebase.google.com/support/privacy">سياسة خصوصية Firebase</a>.</li>
+      <li><strong>المتاجر والمواقع الخارجية:</strong> عند الضغط على روابط تابعة (Affiliate Links)، يُوجّهك التطبيق إلى مواقع خارجية تخضع لسياسات خصوصية منفصلة.</li>
     </ul>
     <p>لا نبيع بياناتك الشخصية لأطراف ثالثة.</p>
 
-    <h2>5. الروابط الخارجية</h2>
+    <h2>7. الروابط الخارجية</h2>
     <p>
-      يحتوي التطبيق على روابط لمواقع ومتاجر خارجية. نحن غير مسؤولين عن محتوى أو ممارسات
-      الخصوصية لتلك المواقع. ننصحك بمراجعة سياسة الخصوصية لكل موقع تزوره.
+      يحتوي التطبيق على روابط لمواقع ومتاجر خارجية (مثل Amazon وغيرها). نحن غير مسؤولين
+      عن محتوى أو ممارسات الخصوصية لتلك المواقع. ننصحك بمراجعة سياسة الخصوصية لكل موقع تزوره.
     </p>
 
-    <h2>6. خصوصية الأطفال</h2>
+    <h2>8. مدة الاحتفاظ بالبيانات</h2>
+    <ul>
+      <li><strong>البيانات المحلية (المفضلة والمظهر):</strong> تبقى على جهازك حتى تحذف بيانات التطبيق أو تُزيل التطبيق.</li>
+      <li><strong>محتوى Firestore:</strong> يُدار من قبل المطوّر على خوادم Firebase.</li>
+    </ul>
+
+    <h2>9. خصوصية الأطفال</h2>
     <p>
       تطبيق <strong>كوبون توت</strong> غير موجّه للأطفال دون سن 13 عامًا، ولا نجمع عن قصد
       معلومات شخصية من الأطفال.
     </p>
 
-    <h2>7. أمان البيانات</h2>
+    <h2>10. أمان البيانات</h2>
     <p>
-      نستخدم إجراءات أمان مقبولة تجاريًا لحماية المعلومات، بما في ذلك الاتصالات المشفرة (HTTPS)
+      نستخدم إجراءات أمان مقبولة تجاريًا، بما في ذلك الاتصالات المشفرة (HTTPS/TLS)
       عند جلب البيانات من Firebase. ومع ذلك، لا يمكن ضمان الأمان الكامل لأي طريقة نقل أو تخزين عبر الإنترنت.
     </p>
 
-    <h2>8. حقوقك وخياراتك</h2>
+    <h2>11. حقوقك وخياراتك</h2>
     <ul>
-      <li>يمكنك حذف بيانات المفضلة المحلية بإزالة بيانات التطبيق من إعدادات جهاز Android.</li>
-      <li>يمكنك التوقف عن استخدام التطبيق أو إلغاء تثبيته في أي وقت.</li>
-      <li>يمكنك التواصل معنا لأي استفسار متعلق بالخصوصية عبر البريد أدناه.</li>
+      <li>حذف قائمة المفضلة وإعدادات المظهر: من إعدادات Android → التطبيقات → كوبون توت → مسح البيانات (Clear data).</li>
+      <li>إيقاف استخدام التطبيق أو إلغاء تثبيته في أي وقت.</li>
+      <li>التواصل معنا لأي استفسار متعلق بالخصوصية عبر البريد أدناه.</li>
     </ul>
 
-    <h2>9. التغييرات على هذه السياسة</h2>
+    <h2>12. التغييرات على هذه السياسة</h2>
     <p>
       قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سيتم نشر أي تغييرات على هذه الصفحة مع
       تحديث تاريخ "آخر تحديث" أعلاه. استمرارك في استخدام التطبيق بعد التحديث يعني موافقتك على السياسة المحدّثة.
     </p>
 
-    <h2>10. التواصل معنا</h2>
+    <h2>13. التواصل معنا</h2>
     <p>
       إذا كان لديك أي سؤال حول سياسة الخصوصية أو ممارسات البيانات في تطبيق
       <strong>كوبون توت</strong>، يرجى التواصل مع المطوّر <strong>iHomdi</strong>:
     </p>
     <ul>
-      <li>البريد الإلكتروني: <a href="mailto:ihomdi.support@gmail.com">ihomdi.support@gmail.com</a></li>
+      <li>البريد الإلكتروني: <a href="mailto:now150x@gmail.com">now150x@gmail.com</a></li>
       <li>اسم التطبيق: كوبون توت</li>
       <li>معرّف الحزمة: com.iHomdi.coppon_tot</li>
+      <li>المطوّر: iHomdi</li>
     </ul>
 
     <section class="en">
@@ -178,7 +189,7 @@
         <p><strong>Developer / Legal entity:</strong> iHomdi</p>
         <p><strong>Package name:</strong> com.iHomdi.coppon_tot</p>
         <p><strong>Distribution platform:</strong> Google Play</p>
-        <p><strong>Contact email:</strong> <a href="mailto:ihomdi.support@gmail.com">ihomdi.support@gmail.com</a></p>
+        <p><strong>Contact email:</strong> <a href="mailto:now150x@gmail.com">now150x@gmail.com</a></p>
       </div>
 
       <p>
@@ -190,54 +201,73 @@
       <h2>1. Overview</h2>
       <p>
         <strong>Coupon Tot</strong> is a free app that displays coupons, offers, and affiliate links
-        to external stores. The app does not require user account registration for basic use.
+        to external stores. No user account or login is required. The app does not show in-app advertisements.
       </p>
 
-      <h2>2. Information We Collect</h2>
+      <h2>2. App Permissions</h2>
+      <p>The app requests only the following Android permission:</p>
       <ul>
-        <li><strong>Local device data:</strong> such as your favorites list stored locally on your device.</li>
-        <li><strong>Basic technical data:</strong> may be collected through Google Firebase for app stability.</li>
-        <li><strong>Content data:</strong> coupons, offers, and banners are fetched from Firebase Firestore.</li>
+        <li><strong>INTERNET:</strong> to fetch coupons from Firebase Firestore, load images, and open external store links.</li>
       </ul>
-      <p>We do not intentionally collect sensitive personal information such as full name, ID, home address, or payment data.</p>
+      <p><strong>The app does NOT request:</strong> location, camera, microphone, contacts, SMS, phone, external storage, or device accounts.</p>
 
-      <h2>3. How We Use Information</h2>
+      <h2>3. Information We Collect and Store</h2>
       <ul>
-        <li>Display coupons, offers, and categories.</li>
-        <li>Save local preferences such as favorites and theme settings.</li>
-        <li>Improve app stability and user experience.</li>
+        <li><strong>Favorites (local):</strong> coupon data you save as favorites is stored on your device only via <strong>SharedPreferences</strong>. It is not uploaded to our servers.</li>
+        <li><strong>Theme settings (local):</strong> light/dark mode preference stored via <strong>GetStorage</strong> on your device.</li>
+        <li><strong>App content (server):</strong> coupons, categories, banners, and offers fetched from <strong>Firebase Firestore</strong>.</li>
+        <li><strong>Network images:</strong> coupon and banner images loaded from URLs in Firestore data.</li>
+        <li><strong>Firebase technical data:</strong> Firebase Core and Firestore are used. <strong>Firebase Analytics is NOT used.</strong> Google may collect basic service data per the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+      </ul>
+      <p>We do not intentionally collect sensitive personal information such as full name, ID, home address, phone number, or payment data.</p>
+
+      <h2>4. Clipboard</h2>
+      <p>When you tap copy, the app writes a coupon code to your device clipboard. The app does <strong>not read</strong> your clipboard or collect data from it.</p>
+
+      <h2>5. How We Use Information</h2>
+      <ul>
+        <li>Display coupons, offers, categories, and banners.</li>
+        <li>Save favorites and theme settings on your device.</li>
+        <li>Copy coupon codes when you request it.</li>
         <li>Open external store links when you tap coupons or ads.</li>
+        <li>Operate and maintain the app via Firebase.</li>
       </ul>
 
-      <h2>4. Third-Party Sharing</h2>
+      <h2>6. Third-Party Sharing</h2>
       <ul>
-        <li><strong>Google Firebase / Firestore:</strong> to host and display app content.</li>
-        <li><strong>External websites/stores:</strong> affiliate links redirect you to third-party sites with separate privacy policies.</li>
+        <li><strong>Google Firebase / Firestore:</strong> hosts and delivers app content. See <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</li>
+        <li><strong>External stores/websites:</strong> affiliate links redirect you to third-party sites with separate privacy policies.</li>
       </ul>
       <p>We do not sell your personal data.</p>
 
-      <h2>5. External Links</h2>
+      <h2>7. External Links</h2>
       <p>The app contains links to third-party websites. We are not responsible for their content or privacy practices.</p>
 
-      <h2>6. Children's Privacy</h2>
-      <p>Coupon Tot is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
-
-      <h2>7. Data Security</h2>
-      <p>We use commercially acceptable safeguards, including HTTPS when fetching Firebase data. Complete security cannot be guaranteed.</p>
-
-      <h2>8. Your Choices</h2>
+      <h2>8. Data Retention</h2>
       <ul>
-        <li>Delete local favorites by clearing app data in Android settings.</li>
-        <li>Stop using or uninstall the app at any time.</li>
-        <li>Contact us for privacy-related questions using the email below.</li>
+        <li><strong>Local data:</strong> remains on your device until you clear app data or uninstall.</li>
+        <li><strong>Firestore content:</strong> managed by the developer on Firebase servers.</li>
       </ul>
 
-      <h2>9. Changes to This Policy</h2>
+      <h2>9. Children's Privacy</h2>
+      <p>Coupon Tot is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+
+      <h2>10. Data Security</h2>
+      <p>We use commercially acceptable safeguards, including HTTPS/TLS when fetching Firebase data. Complete security cannot be guaranteed.</p>
+
+      <h2>11. Your Choices</h2>
+      <ul>
+        <li>Delete favorites and theme settings: Android Settings → Apps → Coupon Tot → Clear data.</li>
+        <li>Stop using or uninstall the app at any time.</li>
+        <li>Contact us for privacy questions using the email below.</li>
+      </ul>
+
+      <h2>12. Changes to This Policy</h2>
       <p>We may update this policy from time to time. Changes will be posted on this page with an updated date.</p>
 
-      <h2>10. Contact Us</h2>
+      <h2>13. Contact Us</h2>
       <ul>
-        <li>Email: <a href="mailto:ihomdi.support@gmail.com">ihomdi.support@gmail.com</a></li>
+        <li>Email: <a href="mailto:now150x@gmail.com">now150x@gmail.com</a></li>
         <li>App name: Coupon Tot (كوبون توت)</li>
         <li>Package name: com.iHomdi.coppon_tot</li>
         <li>Developer: iHomdi</li>
